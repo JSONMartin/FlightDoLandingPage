@@ -43,9 +43,6 @@
     <!-- Barnaul & bootstrap style file -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/bootstrap_custom.css" type="text/css">
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -87,9 +84,9 @@
                     <!-- Right navbar part -->
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#brn-features">Features</a></li>
-                        <li><a href="#brn-portfolio">Portfolio</a></li>
-                        <li><a href="#brn-pricing">Pricing</a></li>
-                        <li><a href="#brn-reviews">Reviews</a></li>
+                        <li><a href="#brn-whowe">Who we are</a></li>
+                        <li><a href="#brn-team">Team</a></li>
+                        <li><a href="#brn-newsletter">Feedback</a></li>
 
                         <!-- You can add button or dropdown item here -->
                         <!-- Just delete comment tags -->
@@ -119,7 +116,7 @@
 
 
 <!-- =================================================== PROMO ===================================================== -->
-<section id="brn-promo" class="iphone-cover" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-76">
+<section id="brn-promo" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-76">
     <div class="container">
         <div class="row">
 
@@ -133,30 +130,13 @@
 
             </div><!-- /col-md-6 -->
 
-            <div class="col-md-6 col-xs-12" style="position: relative;">
+            <div class="col-md-6">
 
-                <!-- iPhone gallery -->
-                <div class="iphone-gallery-wrapper">
-                    <div class="fotorama"
-                         data-loop="true"
-                         data-autoplay="4000"
-                         data-nav="false">
-
-                        <!-- gallery items (640 x 1136 px) -->
-                        <img src="img/screen1.jpg" alt="screen1"/>
-                        <img src="img/screen1.jpg" alt="screen2"/>
-                        <img src="img/screen1.jpg" alt="screen3"/>
-                        <!-- gallery items (end -->
-
-                    </div>
+                <!-- Video embedding -->
+                <div class="video-embedd">
+                    <iframe width="500" height="340" src="//www.youtube.com/embed/JV09CIZEN-Y" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <!-- iPhone gallery end -->
-
-                <!-- iPhone gallery background -->
-                <div class="iphone">
-                    <img src="img/iphone.png" class="img-responsive" alt="iphone gallery background"/>
-                </div>
-                <!-- iPhone gallery background end -->
+                <!-- Video embedding end -->
 
             </div><!-- /col-md-6 -->
         </div><!-- /row -->
@@ -174,7 +154,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <!-- Don't forget to use span tag for center lines -->
-                    <h2 class="stripe" id= "features"><span>Features</span></h2>
+                    <h2 class="stripe"><span>Features</span></h2>
                 </div>
             </div>
         </header>
@@ -238,13 +218,6 @@
 
         <div class="row">
 
-            <div class="col-sm-4 col-sm-offset-1">
-
-                <!-- Left side image -->
-                <img class="img-responsive" src="img/imac.jpg" alt="imac"/>
-
-            </div><!-- /col-sm-4 -->
-
             <div class="col-sm-6 col-sm-offset-1">
 
                 <!-- Right side info -->
@@ -264,13 +237,20 @@
 
             </div><!-- /col-sm-6-->
 
+            <div class="col-sm-4 col-sm-offset-1">
+
+                <!-- Left side image -->
+                <img class="img-responsive" src="img/imac.jpg" alt="imac"/>
+
+            </div><!-- /col-sm-4 -->
+
         </div><!-- /row -->
     </div><!-- /container -->
 </section>
 <!-- ============================================== WHO WE ARE END ================================================= -->
 
-<!-- ================================================= PORTFOLIO =================================================== -->
-<section id="brn-portfolio">
+<!-- ================================================= OUR TEAM ==================================================== -->
+<section id="brn-team">
     <div class="container">
 
         <!-- Section header -->
@@ -278,7 +258,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <!-- Don't forget to use span tag for center lines -->
-                    <h2 class="stripe"><span>Portfolio</span></h2>
+                    <h2 class="stripe"><span>Our team</span></h2>
                 </div>
             </div>
         </header>
@@ -286,268 +266,66 @@
 
         <div class="row">
 
-            <ul class="portfolio">
+            <ul class="team">
 
-                <!-- Portfolio item -->
-                <li class="col-md-3 col-sm-4 col-xs-6 text-center">
-                    <figure>
-                        <a href="img/port1.jpg" data-lightbox="portfolio" title="Portfolio item 1">
-                            <img class="img-responsive" src="img/port1.jpg" alt="portfolio item" />
-                            <div class="caption">
-                                <span class="batch icon48">&#xf178;</span>
-                            </div>
-                        </a>
-                    </figure>
+                <!-- Team item -->
+                <li class="col-md-3 col-sm-6 text-center">
+                    <img class="img-circle" src="img/review-person.png" alt="Team person" />
+                    <h5>Anton Pleshivin</h5>
+                    <p>Project founder, CEO</p>
+
+                    <a href="#" class="entypo-social team-sm-icon">&#xe618;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe61a;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe617;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe619;</a>
                 </li>
-                <!-- Portfolio item end -->
+                <!-- Team item end -->
 
-                <!-- Portfolio item -->
-                <li class="col-md-3 col-sm-4 col-xs-6 text-center">
-                    <figure>
-                        <a href="img/port2.jpg" data-lightbox="portfolio" title="Portfolio item 2">
-                            <img class="img-responsive" src="img/port2.jpg" alt="portfolio item" />
-                            <div class="caption">
-                                <span class="batch icon48">&#xf178;</span>
-                            </div>
-                        </a>
-                    </figure>
+                <!-- Team item -->
+                <li class="col-md-3 col-sm-6 text-center">
+                    <img class="img-circle" src="img/review-person2.png" alt="Team person" />
+                    <h5>Dmitriy Trofimov</h5>
+                    <p>Freelace designer</p>
+
+                    <a href="#" class="entypo-social team-sm-icon">&#xe618;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe61a;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe617;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe619;</a>
                 </li>
-                <!-- Portfolio item end -->
+                <!-- Team item end -->
 
-                <!-- Portfolio item -->
-                <li class="col-md-3 col-sm-4 col-xs-6 text-center">
-                    <figure>
-                        <a href="img/port3.jpg" data-lightbox="portfolio" title="Portfolio item 3">
-                            <img class="img-responsive" src="img/port3.jpg" alt="portfolio item" />
-                            <div class="caption">
-                                <span class="batch icon48">&#xf178;</span>
-                            </div>
-                        </a>
-                    </figure>
+                <!-- Team item -->
+                <li class="col-md-3 col-sm-6 text-center">
+                    <img class="img-circle" src="img/review-person3.png" alt="Team person" />
+                    <h5>Alexandr Lubimcev</h5>
+                    <p>Account manager</p>
+
+                    <a href="#" class="entypo-social team-sm-icon">&#xe618;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe61a;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe617;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe619;</a>
                 </li>
-                <!-- Portfolio item end -->
+                <!-- Team item end -->
 
-                <!-- Portfolio item -->
-                <li class="col-md-3 col-sm-4 col-xs-6 text-center">
-                    <figure>
-                        <a href="img/port4.jpg" data-lightbox="portfolio" title="Portfolio item 4">
-                            <img class="img-responsive" src="img/port4.jpg" alt="portfolio item" />
-                            <div class="caption">
-                                <span class="batch icon48">&#xf178;</span>
-                            </div>
-                        </a>
-                    </figure>
+                <!-- Team item -->
+                <li class="col-md-3 col-sm-6 text-center">
+                    <img class="img-circle" src="img/review-person4.png" alt="Team person" />
+                    <h5>Russel Bishop</h5>
+                    <p>UX designer</p>
+
+                    <a href="#" class="entypo-social team-sm-icon">&#xe618;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe61a;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe617;</a>
+                    <a href="#" class="entypo-social team-sm-icon">&#xe619;</a>
                 </li>
-                <!-- Portfolio item end -->
+                <!-- Team item end -->
 
-                <!-- Portfolio item -->
-                <li class="col-md-3 col-sm-4 col-xs-6 text-center">
-                    <figure>
-                        <a href="img/port5.jpg" data-lightbox="portfolio" title="Portfolio item 5">
-                            <img class="img-responsive" src="img/port5.jpg" alt="portfolio item" />
-                            <div class="caption">
-                                <span class="batch icon48">&#xf178;</span>
-                            </div>
-                        </a>
-                    </figure>
-                </li>
-                <!-- Portfolio item end -->
-
-                <!-- Portfolio item -->
-                <li class="col-md-3 col-sm-4 col-xs-6 text-center">
-                    <figure>
-                        <a href="img/port6.jpg" data-lightbox="portfolio" title="Portfolio item 6">
-                            <img class="img-responsive" src="img/port6.jpg" alt="portfolio item" />
-                            <div class="caption">
-                                <span class="batch icon48">&#xf178;</span>
-                            </div>
-                        </a>
-                    </figure>
-                </li>
-                <!-- Portfolio item end -->
-
-                <!-- Portfolio item -->
-                <li class="col-md-3 col-sm-4 col-xs-6 text-center">
-                    <figure>
-                        <a href="img/port7.jpg" data-lightbox="portfolio" title="Portfolio item 7">
-                            <img class="img-responsive" src="img/port7.jpg" alt="portfolio item" />
-                            <div class="caption">
-                                <span class="batch icon48">&#xf178;</span>
-                            </div>
-                        </a>
-                    </figure>
-                </li>
-                <!-- Portfolio item end -->
-
-                <!-- Portfolio item -->
-                <li class="col-md-3 col-sm-4 col-xs-6 text-center">
-                    <figure>
-                        <a href="img/port8.jpg" data-lightbox="portfolio" title="Portfolio item 8">
-                            <img class="img-responsive" src="img/port8.jpg" alt="portfolio item" />
-                            <div class="caption">
-                                <span class="batch icon48">&#xf178;</span>
-                            </div>
-                        </a>
-                    </figure>
-                </li>
-                <!-- Portfolio item end -->
-
-            </ul><!-- /portfolio -->
+            </ul><!-- /team -->
 
         </div><!-- /row -->
     </div><!-- /container -->
 </section>
-<!-- =============================================== PORTFOLIO END ================================================= -->
-
-<!-- ============================================== PRICING TABLES ================================================= -->
-<section id="brn-pricing">
-    <div class="container">
-
-        <!-- Section header -->
-        <header>
-            <div class="row">
-                <div class="col-xs-12">
-                    <!-- Don't forget to use span tag for center lines -->
-                    <h2 class="stripe"><span>Pricing tables</span></h2>
-                </div>
-            </div>
-        </header>
-        <!-- Section header end -->
-
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-sm-12">
-                <div class="row">
-
-                    <!-- Pricing table item -->
-                    <div class="col-md-4">
-                        <div class="pricing-table text-center">
-
-                            <div class="pricing-header">
-                                <h4>Medium<br>$600</h4>
-                            </div>
-
-                            <ul class="pricing-items">
-                                <li>Nunc pellentesque ut neque</li>
-                                <li>Suspendisse blandit risus risus</li>
-                                <li>Sit amet consectetur nisi</li>
-                                <li>Sed et augue nec nisl faucibus</li>
-                                <li>Nunc pellentesque ut neque</li>
-                            </ul>
-
-                            <div class="pricing-button">
-                                <a href="#" class="btn btn-primary">Buy plan</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Pricing table item end -->
-
-                    <!-- Pricing table item -->
-                    <div class="col-md-4">
-                        <div class="pricing-table pricing-top text-center">
-
-                            <div class="pricing-header" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-76">
-                                <h4>Professional<br>$600</h4>
-                            </div>
-
-                            <ul class="pricing-items">
-                                <li>Nunc pellentesque ut neque</li>
-                                <li>Suspendisse blandit risus risus</li>
-                                <li>Suspendisse blandit risus risus</li>
-                                <li>Sit amet consectetur nisi</li>
-                                <li>Sed et augue nec nisl faucibus</li>
-                                <li>Nunc pellentesque ut neque</li>
-                            </ul>
-
-                            <div class="pricing-button">
-                                <a href="#" class="btn btn-primary">Buy plan</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Pricing table item end -->
-
-                    <!-- Pricing table item -->
-                    <div class="col-md-4">
-                        <div class="pricing-table text-center">
-
-                            <div class="pricing-header">
-                                <h4>Medium<br>$600</h4>
-                            </div>
-
-                            <ul class="pricing-items">
-                                <li>Nunc pellentesque ut neque</li>
-                                <li>Suspendisse blandit risus risus</li>
-                                <li>Sit amet consectetur nisi</li>
-                                <li>Sed et augue nec nisl faucibus</li>
-                                <li>Nunc pellentesque ut neque</li>
-                            </ul>
-
-                            <div class="pricing-button">
-                                <a href="#" class="btn btn-primary">Buy plan</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Pricing table item end -->
-
-                </div><!-- /row -->
-            </div><!-- /col-md-10 -->
-        </div><!-- /row -->
-    </div><!-- /container -->
-</section>
-<!-- ============================================ PRICING TABLES END =============================================== -->
-
-<!-- ================================================== REVIEWS ==================================================== -->
-<section id="brn-reviews" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-150">
-    <div class="container">
-        <div class="row">
-
-            <!-- Section heading -->
-            <div class="col-xs-12 text-center">
-                <h2>Customer reviews</h2>
-            </div>
-            <!-- Section heading end -->
-
-            <!-- ===== REVIEWS BLOCK ===== -->
-            <div class="col-sm-10 col-sm-offset-1 fotorama"
-                 data-width="100%"
-                 data-height="350"
-                 data-loop="true"
-                 data-autoplay="4000"
-                    >
-
-                <!-- Review item -->
-                <div class="review-item text-center">
-                    <img class="img-circle" src="img/review-person.png"/>
-                    <p class="review-text">Sed&nbsp;tempus tempor iaculis. Suspendisse blandit risus risus, sit&nbsp;amet consectetur nisi&nbsp;pretium&nbsp;non.</p>
-                    <cite>Anton Pleshivin,&nbsp;<a href="http://arsenal-klimat.com/" target="_blank"> <i>Arsenal Climate, CEO</i></a></cite>
-                </div>
-                <!-- Review item end -->
-
-                <!-- Review item -->
-                <div class="review-item text-center">
-                    <img class="img-circle" src="img/review-person2.png"/>
-                    <p class="review-text">Sed&nbsp;tempus tempor iaculis. Suspendisse blandit risus risus, sit&nbsp;amet consectetur nisi&nbsp;pretium&nbsp;non.</p>
-                    <cite>Dmitriy Trofimov,&nbsp;<a href="http://www.behance.net/yesiammark" target="_blank"> <i>Freelance designer</i></a></cite>
-                </div>
-                <!-- Review item end -->
-
-                <!-- Review item -->
-                <div class="review-item text-center">
-                    <img class="img-circle" src="img/review-person3.png"/>
-                    <p class="review-text">Sed&nbsp;tempus tempor iaculis. Suspendisse blandit risus risus, sit&nbsp;amet consectetur nisi&nbsp;pretium&nbsp;non.</p>
-                    <cite>Alexander Lubimcev,&nbsp;<a href="/" target="_self"> <i>Account manager</i></a></cite>
-                </div>
-                <!-- Review item end -->
-
-            </div><!-- /col-sm-10 -->
-            <!-- ===== REVIEWS BLOCK END ===== -->
-
-        </div><!-- /row -->
-    </div><!-- /section -->
-</section>
-<!-- ================================================ REVIEWS END ================================================== -->
+<!-- =============================================== OUR TEAM END ================================================== -->
 
 <!-- ================================================ OUR CLIENTS ================================================== -->
 <section id="brn-clients">
