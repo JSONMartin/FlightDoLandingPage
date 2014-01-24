@@ -22,3 +22,13 @@
 div.featureDiv {
   font-size: 150%;
 }
+
+#brn-promo {
+  background: url("../img/iStock/idea_launch/HiRes.jpg") 50% 0 no-repeat #cc1433;
+  /*background-size: cover;*/
+}
+
+#brn-newsletter {
+  background: url("../img/iStock/idea_launch/HiRes.jpg") 50% 0 #cc1433;
+  background-size: 85%;
+}
