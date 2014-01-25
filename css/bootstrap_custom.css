@@ -26,6 +26,7 @@ div.featureDiv {
 #brn-promo {
   background: url("../img/iStock/idea_launch/HiRes.jpg") 50% 0 no-repeat #cc1433;
   /*background-size: cover;*/
+  background-size:300%;
 }
 
 #brn-newsletter {
