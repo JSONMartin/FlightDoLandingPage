@@ -96,24 +96,24 @@ $(document).ready(function() {
 
     /* ========== NEWSLETTER FORM ========== */
 
-    $("#newsletter-form").submit(function() {
-        var str = $(this).serialize();
-        $.ajax({
-            type: "POST",
-            url: "assets/newsletter.php",
-            data: str,
-            success: function(response) {
-                if(response == 'PRINYAL') {
-                    result = '<div class="alert alert-success">Well done! You\'re singned up!</div>'; // Success message
-                    setTimeout("location.reload(true);",5000);
-                } else {
-                    result = response;
-                }
-                $('#newsletter-messages').html(result);
-            }
-        });
-        return false;
-    });
+    // $("#newsletter-form").submit(function() {
+    //     var str = $(this).serialize();
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "assets/newsletter.php",
+    //         data: str,
+    //         success: function(response) {
+    //             if(response == 'PRINYAL') {
+    //                 result = '<div class="alert alert-success">Well done! You\'re singned up!</div>'; // Success message
+    //                 setTimeout("location.reload(true);",5000);
+    //             } else {
+    //                 result = response;
+    //             }
+    //             $('#newsletter-messages').html(result);
+    //         }
+    //     });
+    //     return false;
+    // });
 
 
 

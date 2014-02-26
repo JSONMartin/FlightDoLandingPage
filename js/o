@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BallinHipster</title>
+    <link href="o_files/chosen.css" media="all" rel="stylesheet">
+<link href="o_files/bootstrap.css" media="all" rel="stylesheet">
+<link href="o_files/bootstrap_custom.css" media="all" rel="stylesheet">
+<link href="o_files/collaborators.css" media="all" rel="stylesheet">
+<link href="o_files/scaffolds.css" media="all" rel="stylesheet">
+<link href="o_files/wikis.css" media="all" rel="stylesheet">
+<link href="o_files/application.css" media="all" rel="stylesheet">
+    <script src="o_files/jquery.js"></script>
+<script src="o_files/jquery_ujs.js"></script>
+<script src="o_files/turbolinks.js"></script>
+<script src="o_files/bootstrap.js"></script>
+<script src="o_files/scaffold.js"></script>
+<script src="o_files/abstract-chosen.js"></script>
+<script src="o_files/select-parser.js"></script>
+<script src="o_files/chosen.js"></script>
+<script src="o_files/chosen-jquery.js"></script>
+<script src="o_files/collaborators.js"></script>
+<script src="o_files/event_handlers.js"></script>
+<script src="o_files/wikis.js"></script>
+<script src="o_files/application.js"></script>
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="jfWnz8HqJIxQEpHzChpziNi9WHTKKOPgCVd0Gg/fJLQ=" name="csrf-token">
+  </head>
+  <body>
+      <div class="container">
+        <header>
+ <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Ballin-Hipster!</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://localhost:3000/wikis">Browse Wikis</a></li>
+        <li><a href="http://localhost:3000/wikis/new">Create Wiki</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="pull-right user-info white-text">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle white-text" data-toggle="dropdown">
+                jason.carter.martin@gmail.com <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://localhost:3000/users/edit">Edit Profile</a></li>
+                <li class="divider"></li>
+                <li><a data-method="delete" href="http://localhost:3000/users/sign_out" rel="nofollow">Sign Out</a></li>
+              </ul>
+          </li>
+        </div>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+</header>
+
+
+        <div class="row">
+  <div class="col-md-6">
+    <h1>Edit</h1>
+    <form accept-charset="UTF-8" action="/wikis/5" class="edit_wiki" id="edit_wiki_5" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="_method" value="patch" type="hidden"><input name="authenticity_token" value="jfWnz8HqJIxQEpHzChpziNi9WHTKKOPgCVd0Gg/fJLQ=" type="hidden"></div>
+      <div class="field">
+        <label for="wiki_title">Title</label><br>
+        <input id="wiki_title" name="wiki[title]" value="asdf" type="text">
+      </div>
+      <div class="field">
+        <label for="wiki_body">Body</label><br>
+        <textarea id="wiki_body" name="wiki[body]">asdfasdf
+
+THIS IS TWOfdsafdjklsafjdklsaklj
+NO COLLABORATORS
+ONE COLLAB BLAKE</textarea>
+      </div>
+      <div class="field">
+        <label for="wiki_private">Private</label><br>
+        <input name="wiki[private]" value="0" type="hidden"><input checked="checked" id="wiki_private" name="wiki[private]" value="1" type="checkbox">
+      </div>
+      <div class="field">
+        <label for="wiki_image">Image</label><br>
+        <input id="wiki_image" name="wiki[image]" type="text">
+      </div>
+      <div class="field">
+        <label for="wiki_user_id">User</label><br>
+        <input id="wiki_user_id" name="wiki[user_id]" readonly="readonly" value="1" type="number">
+      </div>
+  </form></div>
+  <div class="col-md-6">
+    <p id="notice"></p>
+    <h1>Preview</h1>
+      <div class="field">
+        <label>Title</label><br>
+        <input value="Title" type="text">
+      </div>
+      <div class="field">
+        <label>Body</label><br>
+        <textarea id="wiki_body_preview">Body</textarea>
+      </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h4><u>Collaborators</u></h4>
+      <input name="wiki[collab_list][]" value="" type="hidden"><select class="chosen-select" id="wiki_collab_list" multiple="multiple" name="wiki[collab_list][]"><option value=""></option>
+<option value="1">jason.carter.martin@gmail.com</option>
+<option selected="selected" value="2">blakeoleus@yahoo.com</option></select>
+    <br><br>
+    <div class="actions">
+      <input name="commit" value="Update Wiki" type="submit">
+    </div>
+    <br>
+  </div>
+</div>
+<a href="http://localhost:3000/wikis/5">Show</a> |
+<a href="http://localhost:3000/wikis">Back</a>
+      </div>
+  
+</body></html>
