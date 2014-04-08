@@ -42,7 +42,7 @@ if(!preg_match($email_exp,$from)) { die($err_tpl_begin . $err_msg_wrongmail . $e
 
 // ========== LETTER CONFIGURATION & RECEIVING ==========
 
-$to = 'yuriybalaka@gmail.com'; // Just write your e-mail here
+$to = 'jason.carter.martin@gmail.com'; // Just write your e-mail here
 $subject = "Feedback form message"; // E-mail theme here
 
 $headers = "MIME-Version: 1.0 " . "\r\n";
@@ -72,7 +72,7 @@ $message .="</html>" . "\r\n";
 // Receiving data
 try {
     mail($to, $subject, $message, $headers);
-    echo "PRINYAL";
+    echo "Error submitting message.";
 } catch (Exception $ex) {
     echo $ex->getMessage();
 }
