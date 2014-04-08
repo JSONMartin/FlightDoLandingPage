@@ -1,3 +1,8 @@
+<html>
+  <head>
+    <meta http-equiv="refresh" content="3;url=http://flight.do">
+  </head>
+  <body>
 <?php
 // Feedback v.0.1
 // Balakadesign, 2013
@@ -21,6 +26,9 @@ require 'lang_en.php';
 require 'template.php';
 
 
+ini_set("SMTP", "aspmx.l.google.com");
+ini_set("sendmail_from", "DatsuSoftware@gmail.com");
+
 // Getting POST data from form
 $name = htmlspecialchars($_POST['name']);
 $from = htmlspecialchars($_POST['email']);
@@ -42,8 +50,9 @@ if(!preg_match($email_exp,$from)) { die($err_tpl_begin . $err_msg_wrongmail . $e
 
 // ========== LETTER CONFIGURATION & RECEIVING ==========
 
-$to = 'jason.carter.martin@gmail.com'; // Just write your e-mail here
-$subject = "Feedback form message"; // E-mail theme here
+//$to = 'jason.carter.martin@gmail.com'; // Just write your e-mail here
+$to = 'datsusoftware@gmail.com;jason.carter.martin@gmail.com'; // Just write your e-mail here
+$subject = "Feedback form message from Flight landing page"; // E-mail theme here
 
 $headers = "MIME-Version: 1.0 " . "\r\n";
 $headers .="Content-Type: text/html; charset=\"UTF-8\"" . "\r\n";
@@ -72,7 +81,16 @@ $message .="</html>" . "\r\n";
 // Receiving data
 try {
     mail($to, $subject, $message, $headers);
-    echo "Error submitting message.";
+    echo "Message sent successfully, returning back to our site...";
+    // echo "<script>";
+    // echo "setTimeout(function () { window.location.href= 'http://flight.do'; },5000);"
+    // echo "</script>";
+
 } catch (Exception $ex) {
+    echo "Error sending message! If problem persists, please e-mail your message to: <a href = 'mailto:DatsuSoftware@gmail.com'><b>DatsuSoftware@gmail.com</b></a>";
     echo $ex->getMessage();
 }
+
+?>
+</body>
+</html>

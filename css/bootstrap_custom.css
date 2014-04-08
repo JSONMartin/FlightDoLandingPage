@@ -33,3 +33,7 @@ div.featureDiv {
   background: url("../img/iStock/idea_launch/HiRes.jpg") 50% 0 #cc1433;
   background-size: 85%;
 }
+
+ul.icon li:before {
+  padding-right: 0px; /* This makes it not indent after the stars on the homepage */
+}
