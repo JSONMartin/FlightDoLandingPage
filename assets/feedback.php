@@ -81,7 +81,7 @@ $message .="</html>" . "\r\n";
 // Receiving data
 try {
     mail($to, $subject, $message, $headers);
-    echo "Message sent successfully, returning back to our site...";
+    echo "<h1>Message sent successfully, returning back to our site...</h1>";
     // echo "<script>";
     // echo "setTimeout(function () { window.location.href= 'http://flight.do'; },5000);"
     // echo "</script>";
