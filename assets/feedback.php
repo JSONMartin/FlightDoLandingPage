@@ -51,7 +51,7 @@ if(!preg_match($email_exp,$from)) { die($err_tpl_begin . $err_msg_wrongmail . $e
 // ========== LETTER CONFIGURATION & RECEIVING ==========
 
 //$to = 'jason.carter.martin@gmail.com'; // Just write your e-mail here
-$to = 'datsusoftware@gmail.com;jason.carter.martin@gmail.com'; // Just write your e-mail here
+$to = 'datsusoftware@gmail.com'; // Just write your e-mail here
 $subject = "Feedback form message from Flight landing page"; // E-mail theme here
 
 $headers = "MIME-Version: 1.0 " . "\r\n";
