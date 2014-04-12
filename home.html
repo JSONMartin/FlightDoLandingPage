@@ -205,9 +205,29 @@
         </header>
         <!-- Section header end -->
 
-        <div class="row" style="font-size: 135%;">
-            <div style="float:left;padding:10px;"><iframe width="560" height="315" src="//www.youtube.com/embed/BMwgfxmr83M" frameborder="0" allowfullscreen></iframe></div><p>To-do lists are great. But, they don't give you that <i>50,000 foot overview</i> of your life; if you aren't careful, your list might be overwhelmingly filled with tasks taking you a direction you really don't want to go. How to keep yourself on track?</p>
-
+        <div class="row" style="font-size: 135%;text-align:left;">
+            
+            <!-- <div class = "video-container" style="float:left;padding:10px;max-width:560;max-height:315;"> -->
+            <!-- <div id = "promo-video-wrapper" style="float:left;width:100%;max-width:560px;"> -->
+                <!-- <div class = "video-container" style="width:100%;"> -->
+                    <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/BMwgfxmr83M" frameborder="0" allowfullscreen></iframe> -->
+                       <!--  <div class = "row">
+                            <div class="col-xs-6"> -->
+                            <div id = "videoContainer">
+                                <center><embed id = "vid" src="http://www.youtube.com/embed/BMwgfxmr83M" frameborder="0" allowfullscreen></center>
+                            </div>
+                                <p>To-do lists are great. But, they don't give you that <i>50,000 foot overview</i> of your life; if you aren't careful, your list might be overwhelmingly filled with tasks taking you a direction you really don't want to go. How to keep yourself on track?</p>
+                            
+                                 
+                            <!-- </div>
+                            <div class = "col-xs-6"> -->
+                                
+                            <!-- </div>
+                        </div>
+ -->
+                <!-- </div>
+            </div> -->
+            
             <p>Enter <b>Flight!</b></p>
 
             <p><b>Flight</b> is an application that makes it easy to map out what you'd like to accomplish and break it down into concrete actionable steps, while providing a visual dashboard interface as a simple and pleasing way to interact with your habits, goals, and dreams. <b>Flight</b> even has reminders and alarms to keep you on track, as well as allows you to slice and dice your metrics with advanced reporting features to monitor progress! Track simple habits like "Quit smoking cigarettes" or "Meditate every day", all the way up to huge bucket list goals such as "<i>Hike Mt. Everest</i>" or "<i>Earn my black belt</i>".</p>
@@ -639,11 +659,21 @@
 <!-- Barnaul custom scripts -->
 <script src="js/scripts.js" type="text/javascript"></script>
 
+<!-- Jquery Video resizer -->
+<!-- <script src="js/jquery.responsiveVideo.js" type="text/javascript"></script> -->
+<!-- Jquery Video end -->
+
 <script type="text/javascript">
    $("#accomplishDiv").click(function(){ window.location = "#accomplish"; });
    $("#setYourStakesDiv").click(function(){ window.location = "#stakes"; });
    $("#supportYourProgressDiv").click(function(){ window.location = "#support"; });
    $("#keepOnTrackDiv").click(function(){ window.location = "#track"; });
+   //$("#vid").responsiveVideo();
+  //  $(document).ready(function(){
+  //   // Target your .container, .wrapper, .post, etc.
+  //   $("#vid").fitVids();
+  // });
+   //$("#vid").fitVids();
 </script>
 
 <!-- Google Analytics BEGIN -->

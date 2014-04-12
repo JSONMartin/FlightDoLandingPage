@@ -37,3 +37,105 @@ div.featureDiv {
 ul.icon li:before {
   padding-right: 0px; /* This makes it not indent after the stars on the homepage */
 }
+
+
+
+#videoContainer
+{
+  float:left;
+  clear:both;
+  padding:10px;
+}
+
+
+
+
+
+
+@media (max-width: 699px) {
+  #videoContainer {
+    float:none;
+    clear:both;
+  }
+  #vid {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media (max-width: 580px) {
+  #videoContainer {
+    float:none;
+    clear:both;
+  }
+  #vid {
+    width: 420px;
+    height: 236.25px;
+  }
+}
+
+@media (max-width: 400px) {
+  #videoContainer {
+    float:none;
+    clear:both;
+  }
+  #vid {
+    width: 320px;
+    height: 157.5px;
+  }
+}
+
+
+@media (min-width: 700px) {
+  #videoContainer {
+    float:left;
+    clear:both;
+  }
+  #vid {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+/*iframe, object, embed {
+  width: 100%;
+}*/
+
+/*.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+/*#promo-video-wrapper {
+  
+}
+*/
+/*
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    float: left;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
