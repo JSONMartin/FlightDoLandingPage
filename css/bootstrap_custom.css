@@ -81,6 +81,17 @@ ul.icon li:before {
   }
   #vid {
     width: 320px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 345px) {
+  #videoContainer {
+    float:none;
+    clear:both;
+  }
+  #vid {
+    width: 280px;
     height: 157.5px;
   }
 }
